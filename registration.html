@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <title>Farmers Market</title>
+    
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="center">Join the Community</h3>
+  <div class="row">
+    <form action="#" class="col s12" method="POST">
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="firstname">First Name</label>
+          <input type="text" name="fname" required>
+      </div>
+      <div class="input-field col s6">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lname" required>
+      </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="username">Username</label><br>
+          <input type="text" name="uname" required>
+        </div>
+        <div class="input-field col s6">
+          <label for="location">Location</label><br>
+          <select name="location" id="" required>
+            <option value="" disabled selected>Pick a Location</option>
+            <option value="Old Town">Kisumu</option>
+            <option value="Mwakirunge">Meru</option>
+            <option value="Kibokoni">Kirinyaga</option>
+            <option value="Majengo">Mombasa</option>
+            <option value="Majengo">Nairobi</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" required>
+        </div>
+        <div class="input-field col s6">
+          <label for="national_id">National Id</label>
+          <input type="tel" name="nat_id">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" >
+        </div>
+        <div class="input-field col s6">
+          <label for="password">Confirm Password</label>
+          <input type="password" name="password" id="confirm_password">
+        </div>
+      </div>
+
+      <button class="btn waves-effect waves-light" type="submit"  onclick="checkPassword()"  name="user_reg">Register
+        </button>
+    </form>
+  </div>
+  </div>
+ 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
+
+  </body>
+  </html>
